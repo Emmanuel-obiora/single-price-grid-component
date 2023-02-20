@@ -16,6 +16,11 @@ body {
 article {
   padding: 2rem;
 }
+@media (max-width: 37.5rem) {
+  article {
+    padding: 1rem;
+  }
+}
 
 h2 {
   color: hsl(0deg, 0%, 100%);
@@ -28,34 +33,69 @@ h2 {
   display: grid;
   height: auto;
 }
+@media (max-width: 37.5rem) {
+  .main {
+    width: 310px;
+  }
+}
 .main-top {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.8rem;
   background: hsl(0deg, 0%, 100%);
   padding: 3rem 1.5rem;
   border-radius: 8px 8px 0 0;
+}
+@media (max-width: 37.5rem) {
+  .main-top {
+    padding: 1.5rem 1rem;
+  }
 }
 .main-top > h1 {
   color: hsl(179deg, 62%, 43%);
   margin-bottom: 0.5rem;
 }
+@media (max-width: 37.5rem) {
+  .main-top > h1 {
+    font-size: 23px;
+  }
+}
 .main-top > h2 {
   color: hsl(71deg, 73%, 54%);
 }
+@media (max-width: 37.5rem) {
+  .main-top > h2 {
+    font-size: 17px;
+  }
+}
 .main-top > p {
-  line-height: 1.4;
+  line-height: 1.5;
   color: hsl(218deg, 22%, 67%);
+}
+@media (max-width: 37.5rem) {
+  .main-top > p {
+    font-size: 14px;
+  }
 }
 .main-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 37.5rem) {
+  .main-bottom {
+    grid-template-columns: 1fr;
+  }
 }
 .main-bottom-left {
   display: flex;
   flex-direction: column;
   background: hsl(179deg, 62%, 43%);
   border-radius: 0 0 0 8px;
+}
+@media (max-width: 37.5rem) {
+  .main-bottom-left {
+    border-radius: 0;
+  }
 }
 .main-bottom-left > strong {
   display: inherit;
@@ -90,6 +130,11 @@ h2 {
   gap: 1rem;
   background: hsl(179deg, 42%, 53%);
   border-radius: 0 0 8px 0;
+}
+@media (max-width: 37.5rem) {
+  .main-bottom-right {
+    border-radius: 0 0 8px 8px;
+  }
 }
 .main-bottom-right > p {
   color: hsl(204deg, 25%, 78%);

@@ -24,6 +24,10 @@ body{
 
 article{
     padding: 2rem;
+
+    @media(max-width: 37.5rem){
+        padding: 1rem;
+    }
 }
 
 h2{

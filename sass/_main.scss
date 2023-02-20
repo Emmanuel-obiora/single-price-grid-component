@@ -4,26 +4,46 @@
     display: grid;
     height: auto;
 
+    @media(max-width: 37.5rem){
+        width: 310px;
+    }
+
     &-top{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: .8rem;
         background: $white;
         padding: 3rem 1.5rem;
         border-radius: 8px 8px 0 0;
 
+        @media(max-width: 37.5rem){
+            padding: 1.5rem 1rem;
+        }
+
         &>h1{
             color: $Cyan;
             margin-bottom: .5rem;
+
+            @media(max-width: 37.5rem){
+                font-size: 23px;
+            }
         }
 
         &>h2{
             color: $BrightYellow;
+
+            @media(max-width: 37.5rem){
+                font-size: 17px;
+            }
         }
 
         &>p{
-            line-height: 1.4;
+            line-height: 1.5;
             color: $GrayishBlue;
+
+            @media(max-width: 37.5rem){
+                font-size: 14px;
+            }
         }
     }
 
@@ -31,11 +51,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        @media(max-width: 37.5rem){
+            grid-template-columns: 1fr;
+        }
+
         &-left{
             display: flex;
             flex-direction: column;
             background: $Cyan;
             border-radius: 0 0 0 8px;
+
+            @media(max-width: 37.5rem){
+                border-radius: 0;
+            }
 
             &>strong{
                 display: inherit;
@@ -75,6 +103,10 @@
             gap: 1rem;
             background: $Cyanvarient;
             border-radius: 0 0 8px 0;
+
+            @media(max-width: 37.5rem){
+                border-radius: 0 0 8px 8px;
+            }
 
             &>p{
                 color: $LightGray-varient;
